@@ -1,24 +1,72 @@
-# README
+# Blog-App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> In this project we are creating a blogging app in which 
+> users will be able to register and have a profile with
+> posts. Each user will have a route to every single instance
+> and posts list will be routed too, as well as every single post.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Rails
+- JavaScript
+- HTML/CSS
+- Rspec
 
-* System dependencies
+## Getting Started
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+- Git/GitHub;
+- Optional ( IDE installed in your machine ) - recommended IDE: Vscode, Rubymine;
+- Ruby Installed in your machine;
+- Rails gem installed in your machine;
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
 
-* Deployment instructions
+- To clone this repo:
+  - Open the Terminal(Mac/Linux) or the Cmd (Windows);
+  - Navigate to where you want to paste the Repo folder;
+  - Type `git clone https://github.com/nelsinofrancisco/ror_oracle_blog.git`;
+  - With you preffered IDE open the folder that you cloned before;
+- Configuring DB access:
+  - Inside the database.yml file modify the Env variables for getting the username and password to access psql database;
+- Creating DB (if needed):
+  - Run `rails db:create` to create a empty databse for the project.   
+  
+### Run Website  
 
-* ...
+- Run `rails s` for starting the server;
+- Access [http://localhost:3000/](http://localhost:3000/) in a browser of your choice.
+
+## Authors
+
+👤 **Juan Gonzalez**
+
+- GitHub: [@JbirdL86](https://github.com/JbirdL86)
+- Twitter: [@twitterhandle](https://twitter.com/JuanLui06498455)
+- Linkedin: [linkedin](https://www.linkedin.com/in/juan-luis-0551921aa/)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Inspiration
+- Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
