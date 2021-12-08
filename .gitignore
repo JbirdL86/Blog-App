@@ -7,6 +7,7 @@
 # Ignore rubocop linters
 .rubocop.yml
 
+node_modules/
 Gemfile.lock
 
 # Ignore bundler config.
