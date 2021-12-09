@@ -43,6 +43,10 @@ To get a local copy up and running follow these simple example steps.
 - Run `rails s` for starting the server;
 - Access [http://localhost:3000/](http://localhost:3000/) in a browser of your choice.
 
+## Run Tests
+
+- Run `rails spec`.
+
 ## Authors
 
 👤 **Juan Gonzalez**
