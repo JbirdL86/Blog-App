@@ -31,12 +31,14 @@ To get a local copy up and running follow these simple example steps.
 - To clone this repo:
   - Open the Terminal(Mac/Linux) or the Cmd (Windows);
   - Navigate to where you want to paste the Repo folder;
-  - Type `git clone https://github.com/nelsinofrancisco/ror_oracle_blog.git`;
-  - With you preffered IDE open the folder that you cloned before;
+  - Type `git clone https://github.com/nelsinofrancisco/ror_oracle_blog.git`
+  - With you preffered IDE open the folder that you cloned before
+  - Run 'bundle install'
 - Configuring DB access:
   - Inside the database.yml file modify the Env variables for getting the username and password to access psql database;
 - Creating DB (if needed):
-  - Run `rails db:create` to create a empty databse for the project.   
+  - Run `rails db:create` to create a empty database for the project.
+  - Run `rails db:migrate` to create database structure
   
 ### Run Website  
 
