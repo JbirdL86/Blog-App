@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20_211_210_164_328) do
   create_table 'posts', force: :cascade do |t|
     t.string 'title'
     t.string 'text'
-    t.integer 'commnets_coounter'
+    t.integer 'comments_counter'
     t.integer 'likes_counter'
     t.datetime 'created_at', precision: 6, null: false
     t.datetime 'updated_at', precision: 6, null: false
@@ -60,7 +60,6 @@ ActiveRecord::Schema.define(version: 20_211_210_164_328) do
   add_foreign_key 'likes', 'posts'
   add_foreign_key 'likes', 'users', column: 'author_id'
   add_foreign_key 'posts', 'users', column: 'author_id'
-
 end
 
 # rubocop:enable Metrics/BlockLength
