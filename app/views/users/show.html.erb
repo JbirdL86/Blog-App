@@ -1,1 +1,13 @@
-<h1>Here is a user profile</h1>
+<div class='users-container'>
+  <%= render 'user', user: @user %>
+  <div class='bio-container'>
+    <h4>Bio</h4>
+    <%= @user.bio %>
+  </div>
+  <div class='recent-posts'>
+    <% @posts.each do |post| %>
+    <%= render 'posts/post_preview', post: post %>
+    <% end %>
+  </div>
+  <button class='all-posts'>See all posts</button>
+</div>
