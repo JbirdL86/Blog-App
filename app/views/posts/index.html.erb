@@ -1,1 +1,8 @@
-<h1>Here is a user list of posts</h1>
+<div class='posts-container'>
+  <%= render 'users/user', user: @user %>
+  <% @posts.each do |post| %>
+    <%= render 'post_preview', post: post %>
+    <%= render partial: 'post_comments', locals: { comments: post.recent_comments } %>
+  <% end %>
+  <button class='pagination'>Pagination</button>
+</div>
