@@ -44,7 +44,10 @@ To get a local copy up and running follow these simple example steps.
 ### Run Website  
 
 - Run `rails s` for starting the server;
-- Access [http://localhost:3000/](http://localhost:3000/) to access the list of users.http://127.0.0.1:3000/users/1
+- Access [http://localhost:3000/](http://localhost:3000/) to access the list of users.
+- Access [http://localhost:3000/](http://localhost:3000/users/1) to access the user's bio.
+- Access [http://localhost:3000/](http://localhost:3000/users/1/posts) to access the user's posts.
+- Access [http://localhost:3000/](http://localhost:3000/users/1) to access the user's specific post.
 
 ## Run Tests
 
