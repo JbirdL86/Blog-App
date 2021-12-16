@@ -1,0 +1,7 @@
+<div class='comment-container'>
+  <% comments.each do |comment| %>
+    <p class='comment-wrapper'>
+      <%= comment.user.name %>: <%= comment.text %>
+    </p>
+  <% end %>
+</div>

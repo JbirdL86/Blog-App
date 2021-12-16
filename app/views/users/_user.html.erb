@@ -1,0 +1,9 @@
+<div class='user-wrapper'>
+  <div class='user-photo'>
+    <img src=<%= get_img(user)%> alt='user photo'> 
+  </div>
+  <div class='user-data'>
+    <h3 class='user-name'><%= user.name %></h3>
+    <p class='user-stats'>Number of posts: <%= user.post_counter%></p>
+  </div>
+</div>

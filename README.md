@@ -5,6 +5,8 @@
 > posts. Each user will have a route to every single instance
 > and posts list will be routed too, as well as every single post.
 
+![screenshot](./users.png)
+
 ## Built With
 
 - Ruby
@@ -12,8 +14,6 @@
 - JavaScript
 - HTML/CSS
 - Rspec
-
-## Getting Started
 
 ## Getting Started
 
@@ -39,11 +39,15 @@ To get a local copy up and running follow these simple example steps.
 - Creating DB (if needed):
   - Run `rails db:create` to create a empty database for the project.
   - Run `rails db:migrate` to create database structure
+  - Run `rails db:seed` to load default values into the database
   
 ### Run Website  
 
 - Run `rails s` for starting the server;
-- Access [http://localhost:3000/](http://localhost:3000/) in a browser of your choice.
+- Access [http://localhost:3000/](http://localhost:3000/) to access the list of users.
+- Access [http://localhost:3000/](http://localhost:3000/users/1) to access the user's bio.
+- Access [http://localhost:3000/](http://localhost:3000/users/1/posts) to access the user's posts.
+- Access [http://localhost:3000/](http://localhost:3000/users/1) to access the user's specific post.
 
 ## Run Tests
 
