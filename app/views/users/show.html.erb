@@ -9,5 +9,5 @@
     <%= render 'posts/post_preview', post: post %>
     <% end %>
   </div>
-  <button class='all-posts'>See all posts</button>
+  <button class='all-posts'><%= link_to "See all posts", user_posts_path(@user.id) %></button>
 </div>

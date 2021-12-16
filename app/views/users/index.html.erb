@@ -1,5 +1,7 @@
 <div class='users-container'>
   <% @users.each do |user| %>
-    <%= render 'user', user: user %>
+    <%= link_to user_path(user.id) do %> 
+      <%= render 'user', user: user %>
+    <% end %>
   <% end %>
 </div>
