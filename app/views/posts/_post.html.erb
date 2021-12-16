@@ -1,0 +1,15 @@
+<div class='posts-wrapper'>
+  <div class='post-header'>
+    <h5 class='post-id'>Post #<%= post.id %> by <%= @user.name %></h5>
+    <div class='post-stats'>
+      <p>Comments: <%= post.comments_counter %>
+      <p>Likes: <%= post.likes_counter %>
+    </div>
+  </div>
+  <div class='post-text'>
+    <p><%= post.text %></p>
+  </div>
+</div>
+<div class='post-comments'>
+    <%= render partial: 'post_comments', locals: { comments: post.comments.all } %>
+</div>
