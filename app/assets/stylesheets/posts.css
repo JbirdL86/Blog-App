@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border: 1px solid black;
+}
+
+.comment-wrapper {
+  font-size: 10px;
+  margin: 1% 0;
+}
+
+.pagination {
+  width: 40%;
+  margin-top: 2%;
+  align-self: center;
+}
+
+.posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  border: 1px solid black;
+  margin-bottom: 2%;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 2% 0;
+}
+
+.post-text {
+  margin: 2% 0;
+}
+
