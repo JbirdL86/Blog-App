@@ -10,11 +10,14 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = Post.new(post_params)
     @user = current_user
-    @post.author_id = @user.id
-    @post.comments_counter = 0
-    redirect_to user_path(@post.author_id) if @post.save
+    if @post.save
+      flash[:success] = 'Post successfully created.'
+      redirect_to user_path(@user.id)
+    else
+      flash[:alert] = 'Error: post is not published'
+    end
   end
 
   def new
@@ -24,6 +27,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :text, :comments_counter, :likes_counter)
+    params.require(:post).permit(:author_id, :title, :text, :comments_counter, :likes_counter)
   end
 end
