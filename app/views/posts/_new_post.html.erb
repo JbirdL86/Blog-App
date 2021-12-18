@@ -1,0 +1,15 @@
+<%= form_with url: user_posts_path(@user.id), scope: :post do |f| %>
+  <div>
+    <%= f.label :title, 'Title' %>
+    <%= f.text_field :title, placeholder: 'Enter the post title', required: true %>
+  </div>
+  <div>
+    <%= f.label :text, 'Text' %>
+    <%= f.text_field  :text, placeholder: 'Enter text for the post', required: true %>
+  </div>
+
+  <%= f.hidden_field :comments_counter, value: 0 %>
+  <%= f.hidden_field :likes_counter, value: 0 %>
+     
+  <%= f.submit "Publish" %>
+<% end %>
