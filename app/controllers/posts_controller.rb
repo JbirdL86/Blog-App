@@ -14,9 +14,7 @@ class PostsController < ApplicationController
     @user = current_user
     @post.author_id = @user.id
     @post.comments_counter = 0
-    if @post.save
-      redirect_to user_path(@post.author_id)
-    end
+    redirect_to user_path(@post.author_id) if @post.save
   end
 
   def new

@@ -66,7 +66,7 @@
   width: 60%;
 }
 
-.post-form div{
+.post-form div {
   margin: 2% 0;
   font-size: 14px;
 }
@@ -105,7 +105,7 @@
   width: 100%;
 }
 
-.form-container div{
+.form-container div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -121,4 +121,3 @@
   height: 150px;
   margin-bottom: 2%;
 }
-
