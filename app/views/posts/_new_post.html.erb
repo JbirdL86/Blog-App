@@ -1,5 +1,5 @@
 <div class='post-form-container'>
-  <%= form_with url: user_posts_path(@user.id), scope: :post, class: 'post-form' do |f| %>
+  <%= form_with url: user_posts_path(@current_user.id), scope: :post, class: 'post-form' do |f| %>
     <div>
       <%= f.label :title, 'Title: ', class: 'post-title-label' %>
       <%= f.text_field :title, placeholder: 'Enter the post title', required: true, class: 'post-title-input' %>
@@ -11,6 +11,7 @@
 
     <%= f.hidden_field :comments_counter, value: 0 %>
     <%= f.hidden_field :likes_counter, value: 0 %>
+    <%= f.hidden_field :author_id, value: @current_user.id %>
       
     <%= f.submit "Publish", class: 'post-submit' %>
   <% end %>
