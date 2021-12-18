@@ -6,10 +6,14 @@
       <p>Likes: <%= post.likes_counter %>
     </div>
   </div>
+  <div class='post-title'>
+    <p><%= post.title %></p>
+  </div>
   <div class='post-text'>
     <p><%= post.text %></p>
   </div>
 </div>
+<%= render partial: "likes/like", locals: { url: post_likes_path(post.id) } %>
 <div class='post-comments'>
     <%= render partial: 'post_comments', locals: { comments: post.comments.all } %>
 </div>

@@ -1,0 +1,13 @@
+<div class='comment-form'>
+  <h4>Add New Comment</h4>
+
+  <%= form_with url: url, scope: :data, class: 'form-container' do |f| %>
+    <div>
+      <%= f.label :text, 'Text:', class: 'comment-input-label' %>
+        
+      <%= f.text_field  :text, placeholder: 'Enter text for the post', required: true, class: 'comment-input' %>
+    </div>
+      
+    <%= f.submit "Publish", class: 'comment-submit' %>
+  <% end %>
+</div>

@@ -48,3 +48,76 @@
 .post-text {
   margin: 2% 0;
 }
+
+.like-input {
+  width: 50px;
+  height: 20px;
+  margin-bottom: 2%;
+}
+
+.post-form-container {
+  margin: 2% 0;
+  align-self: center;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.post-form div {
+  margin: 2% 0;
+  font-size: 14px;
+}
+
+.post-title-input {
+  width: 200px;
+}
+
+.post-text-input {
+  height: 100px;
+}
+
+.post-text-label {
+  margin-bottom: 2%;
+}
+
+.post-submit {
+  align-self: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 2%;
+}
+
+.comment-form h4 {
+  margin-bottom: 2%;
+  align-self: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.comment-input-label {
+  font-size: 14px;
+  margin-bottom: 2%;
+}
+
+.comment-input {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 2%;
+}
