@@ -4,9 +4,12 @@
     <h4>Bio</h4>
     <%= @user.bio %>
   </div>
+  <%= render partial: 'posts/new_post', user: @user.id %>
   <div class='recent-posts'>
     <% @posts.each do |post| %>
-    <%= render 'posts/post_preview', post: post %>
+      <%=link_to user_post_path(@user.id, post.id) do%>
+        <%= render 'posts/post_preview', post: post %>
+      <% end %>
     <% end %>
   </div>
   <button class='all-posts'><%= link_to "See all posts", user_posts_path(@user.id) %></button>
