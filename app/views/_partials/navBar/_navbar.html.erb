@@ -1,0 +1,26 @@
+<div class="navbar-container">
+  <div class="navbar-wrapper">
+    <%= link_to root_path, class: 'link-to-default' do %>
+      <h2>My blog app</h2>
+    <% end %>
+    <% if user_signed_in? %>
+      <%= link_to user_posts_path(@current_user.id), :action => 'go', class: 'link-to-default' do %>
+        <h2>Your Posts</h2>
+      <% end %>
+    <% end %>
+    <% if user_signed_in? %>
+      <div class="navbar-buttons">
+        <div>
+          <%= link_to  new_user_post_path(@current_user.id), :action => 'go', class: 'link-to-default' do %>
+            <button type="submit" class="post-btn">New Post</button>
+          <% end %>
+        </div>
+        <div>
+          <%= link_to  destroy_user_session_path, :method => :delete, class: 'link-to-default' do %>
+            <button type="submit" class="post-btn">Log Out</button>
+          <% end %>
+        </div>
+      </div>
+    <%end%>
+  </div>
+</div>
