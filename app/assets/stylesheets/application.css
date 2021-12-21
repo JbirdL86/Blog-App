@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+ .navbar-container {
+  display: flex;
+  justify-content: center;
+}
+.navbar-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  justify-self: flex-end;
+}
+.log-in-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0;
+}
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 0;
+}
+.new_user {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-form {
+  align-self: center;
+}
+.field {
+  margin: 5% 0;
+}
