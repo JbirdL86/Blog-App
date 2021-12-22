@@ -3,7 +3,6 @@ class Comment < ApplicationRecord
   belongs_to :post, foreign_key: :post_id
   has_many :likes, foreign_key: :post_id
   after_save :update_comments_count
-  default_scope { includes(:likes) }
 
   private
 

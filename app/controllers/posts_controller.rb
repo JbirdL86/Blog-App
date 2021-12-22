@@ -22,6 +22,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @current_user = current_user
   end
 
   private

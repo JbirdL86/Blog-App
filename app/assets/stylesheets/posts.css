@@ -56,17 +56,21 @@
 }
 
 .post-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 2% 0;
-  align-self: center;
 }
 
 .post-form {
   display: flex;
   flex-direction: column;
+  align-self: center;
   width: 60%;
 }
 
 .post-form div {
+  align-self: center;
   margin: 2% 0;
   font-size: 14px;
 }
