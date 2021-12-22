@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# rubocop:disable Metrics/BlockLength
 
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
@@ -68,3 +68,5 @@ ActiveRecord::Schema.define(version: 20_211_221_163_114) do
   add_foreign_key 'likes', 'users', column: 'author_id'
   add_foreign_key 'posts', 'users', column: 'author_id'
 end
+
+# rubocop:enable Metrics/BlockLength
